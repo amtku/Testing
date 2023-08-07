@@ -8,5 +8,15 @@
 </head>
 <body>
 	<h1>Know from where uses is coming!</h1>
+
+    <button id="myButton">Open Link in New Tab</button>
+
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            var url = "http://localhost:4200/dashboard"; // Replace with your desired URL
+            window.open(url, "_blank");
+        });
+    </script>
 </body>
 </html>
