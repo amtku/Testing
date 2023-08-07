@@ -9,14 +9,41 @@
 <body>
 	<h1>Know from where uses is coming!</h1>
 
-    <button id="myButton">Open Link in New Tab</button>
+    <div style="padding-bottom: 10px;">
+        <button id="signIn">Open Sign in Page</button>
+    </div>
+    <div style="padding-bottom: 10px;">
+        <button id="knowMore">Open Know more page</button>
+    </div>
+    <div style="padding-bottom: 10px;">
+        <button id="universityPage">Open University Page</button>
+    </div>
+    <div style="padding-bottom: 10px;">
+        <button id="faqPage">Open Faq page</button>
+    </div>
 
 
     <script>
-        document.getElementById("myButton").addEventListener("click", function() {
+        document.getElementById("signIn").addEventListener("click", function() {
             var url = "http://localhost:4200/dashboard"; // Replace with your desired URL
             window.open(url, "_blank");
         });
+
+        document.getElementById("knowMore").addEventListener("click", function() {
+            var url = "http://localhost:4200/external/knowMore/Internship/I6BSXN8"; // Replace with your desired URL
+            window.open(url, "_blank");
+        });
+
+        document.getElementById("universityPage").addEventListener("click", function() {
+            var url = "http://localhost:4200/external/partner/000000000GB102A6JB98182ZHC"; // Replace with your desired URL
+            window.open(url, "_blank");
+        });
+
+        document.getElementById("faqPage").addEventListener("click", function() {
+            var url = "http://localhost:4200/supportcenter/faqsupport"; // Replace with your desired URL
+            window.open(url, "_blank");
+        });
+
     </script>
 </body>
 </html>
